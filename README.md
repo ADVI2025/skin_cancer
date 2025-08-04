@@ -1,16 +1,44 @@
-# advi
+# Skin Cancer Detection App
 
-A new Flutter project.
+A mobile application built with Flutter that uses a MobileViT-based deep learning model to classify skin lesions as **benign** or **malignant**. The model runs locally on-device using TensorFlow Lite, ensuring both performance and user privacy.
+
+---
+
+## Features
+
+- AI-powered skin lesion classification (benign or malignant)
+- Image selection from gallery
+- On-device prediction using TensorFlow Lite
+- Displays prediction label and confidence score
+- Lightweight and privacy-friendly — no server interaction required
+
+---
+
+## Tech Stack
+
+- **Flutter** – Cross-platform mobile UI
+- **TensorFlow Lite** – On-device model inference
+- **PyTorch + MobileViT** – Model architecture and training
+- **ONNX + TensorFlow** – Model conversion pipeline
+
+---
+
+## Model Overview
+
+| Property        | Details                     |
+|----------------|-----------------------------|
+| Model           | MobileViT-S (small)         |
+| Input Size      | 224x224 RGB image           |
+| Output Classes  | 2 (`benign`, `malignant`)   |
+| Framework       | Trained in PyTorch          |
+| Deployment      | Converted to `.tflite`      |
+
+---
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+### 1. Clone the Repository
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```bash
+git clone https://github.com/ADVI2025/skin_cancer.git
+cd skin_cancer
